@@ -1,4 +1,5 @@
 window.onload = () => {
+
      let places = staticLoadPlaces();
      renderPlaces(places);
 };
@@ -10,7 +11,16 @@ function staticLoadPlaces() {
             location: {
                 lat: 34.101048,
                 lng: -118.252328,
-            }
+            },
+
+        },
+        {
+            name: 'Magnemite',
+            location: {
+                lat: 34.101089,
+                lng: -118.252313,
+            },
+            
         },
     ];
 }
@@ -21,6 +31,8 @@ function renderPlaces(places) {
     places.forEach((place) => {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
+
+        console.log('latitude:' + latitude);
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
