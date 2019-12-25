@@ -1,8 +1,12 @@
-window.onload = () => {
+//window.onload = () => {
 
-     let places = staticLoadPlaces();
-     renderPlaces(places);
-};
+     
+//};
+
+function setUp() {
+    let places = staticLoadPlaces();
+    renderPlaces(places);
+}
 
 function staticLoadPlaces() {
     return [
@@ -10,7 +14,7 @@ function staticLoadPlaces() {
             name: 'Magnemite',
             location: {
                 lat: 34.100962,
-                lng: -118.252322
+                lng: -118.252322,
             }
 
         }
@@ -27,14 +31,14 @@ function renderPlaces(places) {
         console.log('latitude:' + latitude);
 
         var model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        /*
+        model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
         model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '0.5 0.5 0.5');
-        
-        //model.setAttribute('rotation', '0 180 0');
-        //model.setAttribute('scale', '0.5 0.5 0.5');
+        */
+        model.setAttribute('scale', '0.5 0.5 0.5');
 
         model.addEventListener('loaded', () => {
             console.log("loaded");
@@ -42,11 +46,16 @@ function renderPlaces(places) {
         });
 
 
+//var box = document.createElement('a-box');
+//document.querySelector('a-scene').appendChild(box);
+//box.setAttribute('position', {x: 0, y: 10, z: -10});
+
         scene.appendChild(model);
-        document.querySelector('a-entity').flushToDOM();
         
 
 
 
     });
 }
+
+setUp();
