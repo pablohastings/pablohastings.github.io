@@ -12,7 +12,7 @@ function staticLoadPlaces() {
             //34.227914, -119.053594
 
             //camarillo skatepark
-            34.230076, -119.029070
+            //34.230076, -119.029070
             
             //paul changes should show up
             //lat: 34.100962,
@@ -24,13 +24,13 @@ function staticLoadPlaces() {
             }
 
         },
-         {
+        {
             
             //camarillo 
             //34.227914, -119.053594
 
             //camarillo skatepark
-            34.230076, -119.029070
+            //34.230076, -119.029070
             
             //paul changes should show up
             //lat: 34.100962,
@@ -42,7 +42,6 @@ function staticLoadPlaces() {
             }
 
         }
-
 
     ];
 }
