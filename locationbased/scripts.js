@@ -8,15 +8,15 @@ function staticLoadPlaces() {
     return [
         {
             
-            //camarillo , 
-
-            //paul
+            //camarillo 
+            //34.227914, -119.053594
+            //paul changes should show up
             //lat: 34.100962,
             //lng: -118.252322
             name: 'Magnemite',
             location: {
-                lat: 34.227968,
-                lng: -119.053596
+                lat: 34.227914,
+                lng: -118.252322
             }
 
         }
