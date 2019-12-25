@@ -9,7 +9,7 @@ function staticLoadPlaces() {
         {
             
             //camarillo 
-            //34.227971, -119.053605
+            //34.227977, -119.053547
 
             //camarillo skatepark
             //34.230076, -119.029070
@@ -19,8 +19,8 @@ function staticLoadPlaces() {
             //lng: -118.252322
             name: 'Magnemite',
             location: {
-                lat: 34.227971,
-                lng: -119.053605
+                lat: 34.227977,
+                lng: -119.053547
             }
 
         }
